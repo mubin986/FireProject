@@ -11,5 +11,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //This is rksazid
+        //ok done
+        //eibar khela hobe :D
     }
 }
