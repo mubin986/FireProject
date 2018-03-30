@@ -118,9 +118,7 @@ public class SignUpActivity extends AppCompatActivity {
                                     break;
                                 UserName+=UserEmail.charAt(i);
                             }
-                            //myDatabese.child("USERS").child(UserName).setValue(nicknameEditText.getText().toString().trim());
-                            //myDatabese.child("REPORT_TABLE").child(UserName).setValue("NULL");
-                            //myDatabese.child("ADMIN_MESSAGES").child("USER_MESSAGES").child(UserName).setValue("NULL");
+                            myDatabese.child("USER_TABLE").child(UserName).setValue("OK");
                             startActivity(new Intent(SignUpActivity.this,MainActivity.class));
                             finish();
                         }
