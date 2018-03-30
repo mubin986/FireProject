@@ -118,6 +118,8 @@ public class SignUpActivity extends AppCompatActivity {
                                     break;
                                 UserName+=UserEmail.charAt(i);
                             }
+
+                            //database
                             myDatabese.child("USER_TABLE").child(UserName).setValue("OK");
                             startActivity(new Intent(SignUpActivity.this,MainActivity.class));
                             finish();
